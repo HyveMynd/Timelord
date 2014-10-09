@@ -1,0 +1,35 @@
+nav.navbar.navbar-inverse.navbar-fixed-top(role='navigation', ng-controller="NavbarCtrl", bs-navbar)
+    .container
+        .navbar-header
+            button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+                span.sr-only Toggle navigation
+                span.icon-bar
+                span.icon-bar
+                span.icon-bar
+            a(ng-click="homeClick()")
+                img.navbar-brand(src="/images/timelord_logo.png")
+        .collapse.navbar-collapse
+            ul.nav.navbar-nav
+                li(data-match-route='/payroll', ng-if="currentUser")
+                    a(href='/payroll') PAYROLL
+                li(data-match-route='/projects', ng-if="currentUser")
+                    a(href='/projects') PROJECTS
+                li(data-match-route='/hours', ng-if="currentUser")
+                    a(href="/hours") HOURS
+            ul.nav.navbar-nav.navbar-right.padding-20-right(ng-if="!currentUser")
+                li(data-match-route='/')
+                a(href="/") HOME
+                li(data-match-route='/register')
+                a(href="/register") REGISTER
+            ul.nav.navbar-nav.navbar-right.padding-20-right(ng-if="currentUser")
+                li.navbar-text {{ currentUser.firstName }} {{ currentUser.lastName }}
+                li.dropdown
+                    a.dropdown-toggle(href='#', data-toggle='dropdown')
+                        span.glyphicon.glyphicon-user
+                        span.caret
+                    ul.dropdown-menu(role='menu')
+                        li
+                            a(href='/profile') PROFILE
+                        li.divider
+                        li
+                            a(ng-click="logout()") LOGOUT

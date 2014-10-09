@@ -1,0 +1,15 @@
+
+.col-sm-12
+    table.table.table-hover.gradient-dark-bg
+        thead
+            tr
+                th NAME
+                th RATE
+                th HOURS / PAY
+                th TOTAL
+        tbody
+            tr(ng-repeat='user in users')
+                th {{user.name}}
+                th ${{user.rate}} /BiWeekly
+                th {{user.hours}}H | ${{user.pay}}
+                th {{user.total}} Hours

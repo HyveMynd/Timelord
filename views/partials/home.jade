@@ -1,0 +1,29 @@
+.container-fluid
+    .voffset4
+    .row
+        .col-md-6
+                .gradient-dark-bg.center-text
+                    h3#home-logo TIMELORD
+                    img.img-responsive(style="margin-bottom:20px")(src="images/pixio.png")
+        .col-md-6
+            .gradient-dark-bg#login-voffset
+                h2.center-text LOGIN
+                form.form-horizontal(role="form", name="form")
+                    .form-group
+                        label.col-sm-2.control-label Email
+                        .col-sm-10
+                            input.form-control(type="email", placeholder="Email", required, autofocus="true", ng-model="loginUser.username")
+                    .form-group
+                        label.col-sm-2.control-label Password
+                        .col-sm-10
+                            input.form-control(type="password", placeholder="Password", required, ng-model="loginUser.password")
+                    .form-group
+                        .col-sm-offset-2.col-sm-10
+                            .checkbox-inline
+                                label
+                                    input(type="checkbox", value="remember me")
+                                    | Remember Me
+                    .form-group
+                        .col-sm-offset-2.col-sm-10
+                            button.btn.btn-info(ng-disabled="form.$invalid", ng-click="login()") Sign In
+

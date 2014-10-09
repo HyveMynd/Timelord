@@ -1,0 +1,26 @@
+{
+  "name": "gallifrey",
+  "version": "0.0.0",
+  "homepage": "https://github.com/HyveMynd/timelord",
+  "private": true,
+  "authors": [
+    "HyveMynd"
+  ],
+  "description": "Time Management Website",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.2.0",
+    "angular": "~1.2.25",
+    "angular-route": "~1.2.25",
+    "angular-strap": "~2.1.0",
+    "angular-resource": "~1.2.25",
+    "toastr": "~2.0.3"
+  }
+}

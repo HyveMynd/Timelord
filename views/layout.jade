@@ -1,0 +1,14 @@
+doctype html
+html(ng-app="gallifrey")
+  head
+    title= title
+    link(rel="stylesheet", href="/vendor/bootstrap/dist/css/bootstrap.min.css")
+    link(rel="stylesheet", href='/vendor/toastr/toastr.min.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(name='author', content='Hyvemynd Corporation')
+    meta(charset='utf-8')
+  body(ng-controller="AppCtrl")
+    include navbar
+    block content
+    include scripts

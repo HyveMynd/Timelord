@@ -1,0 +1,133 @@
+/*** Colors ***/
+pixioLightGrey = #E1EAE9
+pixioDarkGrey = #808282
+pixioBlue = #36A6DF
+gradientDarkBg = rgba(34,34,34,0.75)
+gradientDarkerBg = rgba(43, 43, 43, 0.75)
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-rendering: optimizelegibility
+  font-family : roboReg
+}
+
+#content
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+#home-logo
+  font-family : roboThin
+  margin-bottom : 50px
+  font-size : 9vw
+
+body
+  padding-top : 50px
+
+h1, h2, h3, h4, h5, table
+  color: #ffffff
+  font-family : roboBold
+
+/* Change the color of the table hover*/
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th
+  background-color: gradientDarkerBg;
+
+.page-content
+  height : 100%
+  background-color : gradientDarkBg
+
+img.img-responsive
+  margin : 0 auto
+
+.center-text
+  text-align : center
+
+.gradient-dark-bg
+  padding: 20px;
+  background: gradientDarkBg
+
+.navbar-brand
+  padding : 12px
+
+.navbar
+  background : url(http://beta.pixio.com/wp-content/uploads/2014/09/Global-Sidebar2.png)
+  font-family : roboBold
+
+.dropdown-menu
+  background : url(http://beta.pixio.com/wp-content/uploads/2014/09/Global-Sidebar2.png)
+  font-family : roboBold
+  color: #ffffff
+
+.dropdown-menu>li>a
+  color: #777
+
+.padding-20-right
+  padding-right : 20px
+
+.margin-right-10
+  margin-right : 10px
+
+.form-control
+  border : 1px solid pixioBlue
+
+.btn-info
+  background-color : #000000
+  color : pixioBlue
+  border : 1px solid pixioBlue
+
+.btn-info[disabled]
+  background-color : gradientDarkerBg
+  color : pixioBlue
+  border : 1px solid pixioBlue
+
+input.form-control
+  color : #ffffff
+  font-family : roboThin
+  background-color : gradientDarkBg
+
+button
+  font-family : roboLight
+  color: #ffffff
+
+label
+  font-family : roboLight
+  color: #ffffff
+
+
+/**** Vertical Spacing ****/
+.voffset  { margin-top: 2px; }
+.voffset1 { margin-top: 5px; }
+.voffset2 { margin-top: 10px; }
+.voffset3 { margin-top: 15px; }
+.voffset4 { margin-top: 30px; }
+.voffset5 { margin-top: 40px; }
+.voffset6 { margin-top: 60px; }
+.voffset7 { margin-top: 80px; }
+.voffset8 { margin-top: 100px; }
+.voffset9 { margin-top: 150px; }
+
+@media (min-width: 1024px)
+  #login-voffset
+    margin-top : 140px
+
+
+/**** Fonts ****/
+@font-face
+  font-family: roboReg
+  src: url(../fonts/Roboto-Regular.ttf)
+@font-face
+  font-family: roboLight
+  src: url(../fonts/Roboto-Light.ttf)
+@font-face
+  font-family: roboThin
+  src: url(../fonts/Roboto-Thin.ttf)
+@font-face
+  font-family: roboBold
+  src: url(../fonts/Roboto-Bold.ttf)
+@font-face
+  font-family : bebas
+  src: url(../fonts/BebasNeue.otf)
