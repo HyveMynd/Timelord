@@ -6,14 +6,8 @@ var express = require('express');
 var router = express.Router();
 var Membership = require('user-module');
 
-var redirects = {
-    successRedirect: "/",
-    failureRedirect: "/login",
-    failureFlash: false
-};
-
 router.post('/login', function (req, res, next) {
-    passport.authenticate('local', function (err, user, info) {
+    passport.authenticate('ldapauth', function (err, user, info) {
         if (err){ return next(err); }
         if (!user){ return res.status(401).send(info); }
         req.login(user, function (err) {
